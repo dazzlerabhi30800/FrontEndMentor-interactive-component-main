@@ -25,16 +25,17 @@ rateBtn.forEach((btn, i) => {
 })
 
 submitBtn.addEventListener('click', () => {
-  frontCard.style.opacity = "0";
-  // tl.fromTo('.card .back', {opacity : 0}, {opacity : 1});
-  backCard.style.transform = "rotateY(0deg)";
-  backCard.style.opacity = "1";
-  figureCard.style.position = "absolute";
-  backCard.style.zIndex = "44";
+ 
   if(score === undefined) {
     rate.innerText = "NoRating";
+    alert("Please select rating");
   } else {
     rate.innerText = score;
+    frontCard.style.opacity = "0";
+    backCard.style.opacity = "1";
+    backCard.style.transform = "rotateY(0deg)";
+    figureCard.style.position = "absolute";
+    backCard.style.zIndex = "44";
   }
   console.log('it working');
 })
