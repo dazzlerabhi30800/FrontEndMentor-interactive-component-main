@@ -4,6 +4,7 @@ const rate = document.querySelector('.rate');
 const figureCard = document.querySelector('.card figure');
 const backCard = document.querySelector('.card .back');
 const frontCard = document.querySelector('.card .front');
+const tl = gsap.timeline({defaults : {duration : .75, ease:'power1.out'}});
 
 let score;
 
@@ -20,16 +21,13 @@ rateBtn.forEach((btn, i) => {
     button(i);
    const targetItem = e.currentTarget;
    score = targetItem.innerText;
-   
-  //  console.log(targetItem);
-
-
-
   })
 })
 
 submitBtn.addEventListener('click', () => {
   frontCard.style.opacity = "0";
+  // tl.fromTo('.card .back', {opacity : 0}, {opacity : 1});
+  backCard.style.transform = "rotateY(0deg)";
   backCard.style.opacity = "1";
   figureCard.style.position = "absolute";
   backCard.style.zIndex = "44";
