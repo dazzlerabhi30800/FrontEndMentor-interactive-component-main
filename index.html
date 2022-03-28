@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="card__container">
+        <div class="card">
+          <!-- Front Container  -->
+          <figure class="front">
+            <div class="front__container">
+              <div class="star">
+                <img src="images/icon-star.svg" alt="">
+              </div>
+              <div class="text__wrapper">
+                <h1 class="heading">How did we do?</h1>
+                <p class="desc">
+                  Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+                </p>
+              </div>
+              <div class="rating__container">
+                  <div class="rating__wrapper">
+                    <div class="rating">1</div>
+                    <div class="rating">2</div>
+                    <div class="rating">3</div>
+                    <div class="rating">4</div>
+                    <div class="rating">5</div>
+                  </div>
+                  <input class="submitBtn" type="submit" value="Submit">
+              </div>
+            </div>
+          </figure>
+
+          <!-- Back Container  -->
+          <figure class="back">
+            <div class="back__container">
+              <div class="illustration__img">
+                <img src="images/illustration-thank-you.svg" alt="">
+              </div>
+              <div class="feedback__wrapper">
+               <h3> You selected <span class="rate"> 4 </span>  out of 5 </h3>
+              </div>
+              <div class="appreciation__wrapper">
+                <h3 class="greet">Thank You!</h3>
+                <p class="salutations">
+                  We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+                </p>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+ 
+
+  
+  
+</body>
+<script src="main.js"></script>
+</html>

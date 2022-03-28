@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  transition: all 0.3s ease-in;
+}
+
+body {
+  height: 100vh;
+  background: #121417;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__container {
+  width: 400px;
+  height: 400px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 1px 10px 10px #111111;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card figure {
+  width: 100%;
+  height: 100%;
+  position: static;
+  margin: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card .front {
+  background: #252d37;
+  transition: all 0.3s linear;
+}
+
+.card .back {
+  background: #252d37;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.front__container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem;
+  gap: 1.5rem;
+}
+.front__container .star {
+  width: 40px;
+  height: 40px;
+  background: rgba(165, 161, 161, 0.137);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.front__container .text__wrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.front__container .text__wrapper .desc {
+  color: #959eac;
+  margin-top: 1rem;
+}
+.front__container .rating__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.front__container .rating__container .rating__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.front__container .rating__container .rating__wrapper .rating {
+  background: rgba(156, 154, 154, 0.212);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #959eac;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in;
+}
+.front__container .rating__container .rating__wrapper .rating:hover {
+  background: rgba(241, 239, 239, 0.322);
+}
+.front__container .rating__container .rating__wrapper .rating.active {
+  background: #fb7413;
+  color: white;
+}
+.front__container .rating__container .submitBtn {
+  outline: none;
+  border: none;
+  background: #fb7413;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.front__container .rating__container .submitBtn:hover {
+  background: #d05a06;
+}
+
+.back__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+.back__container .feedback__wrapper {
+  display: flex;
+  background: rgba(87, 83, 83, 0.295);
+  padding: 0.5rem 0.6rem;
+  border-radius: 30px;
+  color: #fb7413;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  margin-top: 1rem;
+}
+.back__container .appreciation__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.back__container .appreciation__wrapper .greet {
+  font-size: 1.5rem;
+  color: white;
+}
+.back__container .appreciation__wrapper .salutations {
+  font-size: 1rem;
+  color: #959eac;
+}/*# sourceMappingURL=style.css.map */
