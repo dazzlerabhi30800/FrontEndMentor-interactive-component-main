@@ -33,6 +33,10 @@ submitBtn.addEventListener('click', () => {
   backCard.style.opacity = "1";
   figureCard.style.position = "absolute";
   backCard.style.zIndex = "44";
-  rate.innerText = score;
+  if(score === undefined) {
+    rate.innerText = "NoRating";
+  } else {
+    rate.innerText = score;
+  }
   console.log('it working');
 })
