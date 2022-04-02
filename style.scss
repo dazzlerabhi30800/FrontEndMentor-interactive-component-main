@@ -24,6 +24,30 @@ body {
   align-items : center;
 }
 
+.alert__container {
+  position : absolute;
+  color : white;
+  width : 300px;
+  height : 70px;
+  // background : linear-gradient(180deg, rgb(248, 70, 25), rgb(243, 115, 11));
+  border-left : 7px solid hsl(25, 97%, 53%);
+  background : $Dark-Blue;
+  top : 10px;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  border-radius : 5px;
+  font-size : 1.2rem;
+  font-weight : bolder;
+  transform : translateY(-100px);
+  transition : all .2s ease-in;
+
+  &.show {
+    transform : translateY(0px);
+  }
+}
+
+
 .container {
   width : 100%;
   min-height : 100vh;
@@ -45,7 +69,7 @@ body {
   transition : all .4s ease;
   transform-style : preserve-3d;
   position : relative;
-}
+ }
 
 .card figure {
   width : 100%;
